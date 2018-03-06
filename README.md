@@ -70,7 +70,7 @@ Silas will answer with his name, *Silas*.
 
 Outputs Silas' process ID number.
 
-###### tell me your parent's id
+#### tell me your parent's id
 `What next: tell me your parent's id`
 
 Outputs Silas' parent process ID number.
