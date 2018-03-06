@@ -50,22 +50,22 @@ If the user inputs only *echo*, Silas will look in three different locations for
 If the user passes the parameter -x to msh.c when it is first booted, Silas will initiate Debugging Mode. He will repeat every command passed to him and state *About to execute: * then the verbatum command.
 
 ## Commands
-###### how are you
+#### how are you
 `What next: how are you`
 
 Silas will answer with a hard-coded polite response.
 
-###### tell me the time
+#### tell me the time
 `What next: tell me the time`
 
 Gives the time in seconds and nanoseconds since the epoch.
 
-###### tell me your name
+#### tell me your name
 `What next: tell me your name`
 
 Silas will answer with his name, *Silas*.
 
-###### tell me your id
+#### tell me your id
 `What next: tell me your id`
 
 Outputs Silas' process ID number.
@@ -75,45 +75,45 @@ Outputs Silas' process ID number.
 
 Outputs Silas' parent process ID number.
 
-###### tell me your age
+#### tell me your age
 `What next: tell me your age`
 
 Outputs Silas' age in seconds since he was first launched.
 
-###### who am i
+#### who am i
 `What next: who am i`
 
 Grabs the user's Username from the syscall function `getenv()`
 
-###### sleep
+#### sleep
 `What next: tell me your name`
 
 Silas will sleep for the inputted amount of seconds.
 
-###### list
+#### list
 `What next: list /bin`
 
 Opens a directory, reads the directory, and outputs the files inside the directory.
 
-###### open
+#### open
 `What next: open example.txt`
 
 Opens the inputted file and outputs the resulting file descriptor number.
 
 If the file does not exist,  a new file will be created using the inputted name.
-###### read
+#### read
 `What next: read 3`
 
 Silas will read the first line from the file that corresponds to the file descriptor inputted.  `read()` does not take a file name, but only the file descriptor of an already opened file.
-###### close 
+#### close 
 `What next: close 3`
 
 Closes the file and clears it from the third slot in the process table.
-###### help
+#### help
 `What next: help`
 
 Lists all the possible commands and their syntax.
-###### quit
+#### quit
 `What next: quit`
 
 Outputs a friendly goodbye message and quits the process.
